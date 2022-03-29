@@ -21,7 +21,11 @@ const routes: Routes = [
   },
   {
     path: "directive",
-    loadChildren: () => import('./directives/directive.module').then(m => m.DirectiveModule)
+    loadChildren: () => import('./directive/directive.module').then(m => m.DirectiveModule)
+  }, 
+  {
+    path: "reactive-form",
+    loadChildren: () => import('./reactive-form/reactive-form.module').then(m => m.ReactiveFormModule)
   }
 ];
 

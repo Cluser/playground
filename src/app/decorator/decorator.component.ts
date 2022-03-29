@@ -1,14 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { logProperty } from '../shared/decorators/log-property-decorator'
+import { logMethod } from '../shared/decorators/log-method-decorator'
 
-const logProperty = (target: any, memberName: string) => {
-  console.log("Init property: " + memberName);
-};
-
-function logMethod() {
-  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
-    console.log("Calling function: " + propertyKey);
-  };
-}
 
 @Component({
   selector: 'app-decorator',

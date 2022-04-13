@@ -1,0 +1,6 @@
+Counter: {{ counterValue$ | async }} Step: {{ stepValue$ | async }}
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="reset()">Reset</button>
+<input type="number" [(ngModel)]="stepValue" (change)="changeStep(stepValue)" />
+<button (click)="getData()">Get data</button>

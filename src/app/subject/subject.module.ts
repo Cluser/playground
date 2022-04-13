@@ -2,13 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SubjectRoutingModule } from './subject-routing.module';
 
-
-
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    SubjectRoutingModule
-  ]
+  imports: [CommonModule, SubjectRoutingModule],
 })
-export class SubjectModule { }
+export class SubjectModule {}

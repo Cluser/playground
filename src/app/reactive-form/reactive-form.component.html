@@ -1,31 +1,31 @@
-<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+<div class="form">
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <div class="row">
-        <div class="col-1"></div>
-        <div class="col-2">
-            <div class="row">
-                <label for="first-name">First Name: </label>
-                <input id="first-name" type="text" formControlName="firstName">
-                <app-validation-error [control]="profileForm.controls['firstName']"></app-validation-error>
-            </div>
-    
-            <div class="row">
-                <label for="last-name">Last Name: </label>
-                <input id="last-name" type="text" formControlName="lastName">
-                <app-validation-error [control]="profileForm.controls['lastName']"></app-validation-error>
-            </div>
-    
-            <div class="row">
-                <p>Example data</p>
-                <button type="button" (click)="updateProfile()">Update Profile</button>
-            </div>
-    
-    
-            <div class="row">
-                <p>Complete the form to enable button.</p>
-                <button type="submit" [disabled]="!profileForm.valid">Submit</button>
-            </div>    
+      <div class="col-1"></div>
+      <div class="col-2">
+        <div class="row">
+          <label for="first-name">First Name: </label>
+          <input id="first-name" type="text" formControlName="firstName" />
+          <app-validation-error [control]="profileForm.controls['firstName']"></app-validation-error>
         </div>
-        <div class="col-1"></div>
-    </div>
-</form>
 
+        <div class="row">
+          <label for="last-name">Last Name: </label>
+          <input id="last-name" type="text" formControlName="lastName" />
+          <app-validation-error [control]="profileForm.controls['lastName']"></app-validation-error>
+        </div>
+
+        <div class="row">
+          <p>Example data</p>
+          <button type="button" (click)="updateProfile()">Update Profile</button>
+        </div>
+
+        <div class="row">
+          <p>Complete the form to enable button.</p>
+          <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </form>
+</div>

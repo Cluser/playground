@@ -1,0 +1,37 @@
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flexbox__item {
+  font-weight: 800;
+  font-size: 64px;
+  padding: 20px;
+}
+
+.flexbox__item--1 {
+  background-color: rgb(148, 91, 91);
+  grid-area: header;
+  width: 500px;
+}
+
+.flexbox__item--2 {
+  background-color: rgb(13, 126, 13);
+  grid-area: menu;
+}
+
+.flexbox__item--3 {
+  background-color: rgb(0, 130, 182);
+  grid-area: main;
+}
+
+.flexbox__item--4 {
+  background-color: rgb(167, 25, 159);
+  grid-area: main;
+}
+
+.flexbox__item--5 {
+  background-color: rgb(255, 123, 0);
+  grid-area: footer;
+}

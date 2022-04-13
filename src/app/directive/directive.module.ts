@@ -5,13 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { DirectiveComponent } from './directive.component';
 
 @NgModule({
-  declarations: [
-    DirectiveComponent
-  ],
-  imports: [
-    CommonModule,
-    DirectiveRoutingModule,
-    SharedModule
-  ]
+  declarations: [DirectiveComponent],
+  imports: [CommonModule, DirectiveRoutingModule, SharedModule],
 })
-export class DirectiveModule { }
+export class DirectiveModule {}

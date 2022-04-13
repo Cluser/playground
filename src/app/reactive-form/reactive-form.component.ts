@@ -5,32 +5,26 @@ import { Validators } from '@angular/forms';
 @Component({
   selector: 'app-reactive-form',
   templateUrl: './reactive-form.component.html',
-  styleUrls: ['./reactive-form.component.scss']
+  styleUrls: ['./reactive-form.component.scss'],
 })
 export class ReactiveFormComponent implements OnInit {
-
   public profileForm = this.formBuilder.group({
     firstName: ['', [Validators.minLength(2), Validators.maxLength(4), Validators.required]],
-    lastName: ['', [Validators.required]]
-  })
+    lastName: ['', [Validators.required]],
+  });
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   public updateProfile(): void {
     this.profileForm.patchValue({
       firstName: 'Ex',
-      lastName: 'ample'
+      lastName: 'ample',
     });
   }
 
   public onSubmit(): void {
     console.warn(this.profileForm.value);
   }
-
-
-
 }

@@ -4,12 +4,13 @@ import { ReactiveFormComponent } from './reactive-form.component';
 
 const routes: Routes = [
   {
-    path: '', component: ReactiveFormComponent,
-  }
+    path: '',
+    component: ReactiveFormComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class ReactiveFormRoutingModule { }
+export class ReactiveFormRoutingModule {}

@@ -3,15 +3,12 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-validation-error',
   templateUrl: './validation-error.component.html',
-  styleUrls: ['./validation-error.component.scss']
+  styleUrls: ['./validation-error.component.scss'],
 })
 export class ValidationErrorComponent implements OnInit {
+  @Input('control') control: any;
 
-  @Input("control") control: any;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-  
+  ngOnInit(): void {}
 }

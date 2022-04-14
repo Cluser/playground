@@ -1,3 +1,5 @@
+# playground
+
 This project is just a playground for testing functionalities of Angular.
 
 ## You can find here examples of:

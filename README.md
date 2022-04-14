@@ -1,6 +1,7 @@
 This project is just a playground for testing functionalities of Angular.
 
 You can find here examples of:
+
 :white_check_mark: ngrx
 
 :white_check_mark: promise

@@ -1,27 +1,29 @@
-# Playground
+# playground
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This project is just a playground for testing functionalities of Angular.
 
-## Development server
+## You can find here examples of:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+:white_check_mark: ngrx
 
-## Code scaffolding
+:white_check_mark: promise
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+:white_check_mark: subject
 
-## Build
+:white_check_mark: observable
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+:white_check_mark: decorator
 
-## Running unit tests
+:white_check_mark: directive
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+:white_check_mark: pipe
 
-## Running end-to-end tests
+:white_check_mark: reactive form
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+:white_check_mark: routing
 
-## Further help
+:white_check_mark: css flexbox
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+:white_check_mark: css grid
+
+:white_check_mark: core / shared folders

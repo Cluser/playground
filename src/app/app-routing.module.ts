@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'ngrx',
     loadChildren: () => import('./ngrx/ngrx.module').then((m) => m.NgrxModule),
   },
+  {
+    path: 'spread-operator',
+    loadChildren: () => import('./spread-operator/spread-operator.module').then((m) => m.SpreadOperatorModule),
+  },
 ];
 
 @NgModule({

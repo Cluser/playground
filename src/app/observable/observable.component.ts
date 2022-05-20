@@ -10,8 +10,8 @@ export class ObservableComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log('Test observable');
     this.observableTest();
+    this.observableDateTime().subscribe((x) => console.log(x));
   }
 
   public observableTest(): void {
@@ -35,5 +35,13 @@ export class ObservableComponent implements OnInit {
     });
 
     subscription.unsubscribe();
+  }
+
+  public observableDateTime(): Observable<string> {
+    const observable = new Observable<string>((observer) => {
+      setInterval(() => observer.next(new Date().toString()), 1000);
+    });
+
+    return observable;
   }
 }

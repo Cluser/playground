@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'spread-operator',
     loadChildren: () => import('./spread-operator/spread-operator.module').then((m) => m.SpreadOperatorModule),
   },
+  {
+    path: 'arrays',
+    loadChildren: () => import('./arrays/arrays.module').then((m) => m.ArraysModule),
+  },
 ];
 
 @NgModule({
